@@ -3,7 +3,7 @@
 #AutoIt3Wrapper_Icon=..\..\..\..\Helmut Fischer\MKT\Helmut Fischer.ico
 #AutoIt3Wrapper_Res_Comment=Made by Dang
 #AutoIt3Wrapper_Res_Description=Tool for semi auto input calibration STD for Gold Application
-#AutoIt3Wrapper_Res_Fileversion=2.0.1.1
+#AutoIt3Wrapper_Res_Fileversion=2.0.1.2
 #AutoIt3Wrapper_Res_Fileversion_AutoIncrement=y
 #AutoIt3Wrapper_Res_ProductName=Auto Input STD v2
 #AutoIt3Wrapper_Res_ProductVersion=2.0.1
@@ -12,7 +12,7 @@
 #EndRegion ;**** Directives created by AutoIt3Wrapper_GUI ****
 #cs ----------------------------------------------------------------------------
 
- Version:		2.0.1
+ Version:		2
  Author:		Dang Nguyen
 
  Script Function:
@@ -58,8 +58,8 @@ Global Const $config_std = @ScriptDir & "\CONFIG_STD.ini"
 Global Const $check_app = FileExists($config_app)
 Global Const $check_std = FileExists($config_std)
 
-Global Const $cVersion = "2.0.1"
-Global Const $cIdVersion = 201
+Global Const $cVersion = "2.0.2"
+Global Const $cIdVersion = 202
 
 While 1
 	$nMsg = GUIGetMsg()
@@ -441,7 +441,7 @@ Func GGEditor()
 	GUISetFont(12, 400, 0, "Be Vietnam Pro")
 	Local $GJLabel = GUICtrlCreateLabel("Gold Global", 30, 0, 617, 126, $SS_CENTER)
 	GUICtrlSetFont(-1, 60, 400, 0, "Be Vietnam Pro")
-	Local $Label1 = GUICtrlCreateLabel("No. of Element (max 10 elements)", 30, 152, 441, 45)
+	Local $Label1 = GUICtrlCreateLabel("No. of Element (max 25 elements)", 30, 152, 441, 45)
 	GUICtrlSetFont(-1, 20, 400, 0, "Be Vietnam Pro")
 	Local $Label2 = GUICtrlCreateLabel("(Outside range, leave it blank)", 30, 208, 241, 28)
 	Local $Label3 = GUICtrlCreateLabel("1st", 30, 265, 40, 28, $SS_CENTER)
